@@ -1,8 +1,37 @@
-.user-image{
+.bg-gray{
+    background-color: #F0F3F5;
+}
+.user-image {
     width: 44px;
     height: 44px;
 }
-.main{
+
+.main {
     padding-top: 80px;
     padding-bottom: 80px;
+}
+.tab-bg-primary{
+    background-color: #FCFCFD;
+}
+
+.card {
+    .card-title-blue {
+        color: #4A69E8;
+    }
+
+    .card-subtitle {
+        color: #667F99;
+        font-size: 18px;
+    }
+}
+
+.table {
+
+    .text-finish {
+        color: #8599AD;
+    }
+}
+
+.side-width{
+    width: 300px;
 }

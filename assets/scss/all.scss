@@ -1,6 +1,20 @@
-@import "../../node_modules/bootstrap/scss/functions";
+// SCSS檔名前面加_，表示該檔案「不會被編譯成獨立檔案」。
+// 雲端下載的就屬於不用被編譯的檔案，要加_。
+// @import scss時，不需要寫_、.scss。(但老師說建議還是加下底線???)
+// =======================================================================
+
+// vite環境，可以省略'node_modules'的字
+// 原本完整路徑式下方這樣
+// @import '../../node_modules/bootstrap/scss/bootstrap.scss'
+
+// =======================================================================
+// 客製化 BS scss (按照順序規則載入)
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+// @import "bootstrap/scss/functions";
+
+@import "./bootstrap/scss/functions";
 @import './utils/variables';
-@import "../../node_modules/bootstrap";
+@import "./bootstrap/scss/bootstrap.scss";
 
 @import './base/base';
 
